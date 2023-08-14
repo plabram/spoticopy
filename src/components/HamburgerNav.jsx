@@ -33,6 +33,8 @@ text-align: right;
 line-height: 1.15;
 `
 
+
+
 const Menu = styled.div`
 padding-left: 40px;
 padding-top: 30px;
@@ -44,23 +46,23 @@ background-color: #141414;
 color: var(--light);
 z-index: 999;
 position: absolute;
-transition:all 0.5s ease-in-out;
 font-size: 24px;
+transform: translateX(100%);
+-webkit-transform: translateX(100%);
+animation: slide-in 0.5s forwards;
+-webkit-animation: slide-in 0.5s forwards;
 `
-
-// const MobileNavLinksStyled = styled.li`
-// font-size: 12px;
-// `
 
 
 const HamburgerNav = () => {
 
   const [open, setOpen] = useState(false)
 
+
   return (
     <>
       <MobileHeader>
-        <Menu open={open}>
+        <Menu id="menu" open={open}>
           <CloseButtonContainer>
             <Button background="#141414" size="24px" action={() => setOpen(false)}>
               X

@@ -37,7 +37,7 @@ h1 {
 h2 {
   font-size: 8rem;
   font-family: 'Londrina Outline', cursive;
-  line-height: 0.87rem;
+  line-height: 8rem;
   color: var(--mid);
   opacity: 20%;
   text-align: center
@@ -102,6 +102,24 @@ input[type="radio"]:hover {
     opacity: 1;
     bottom: 0;
   }
+}
+  
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
 }
 
 @media (max-width: 900px) {
