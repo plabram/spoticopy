@@ -86,13 +86,13 @@ const HamburgerNav = () => {
           <h5>(c) 2020 Spotify AB</h5>
         </Menu>
         <NavBar background="#141414" direction="row">
-          <LogoStyled src="../../public/images/spotify-canvas-logo.png" alt="Spotify logo" />
-          <Button action={() => setOpen(true)} background="var(--middark)"><img src="../../public/images/hamburger.svg" /></Button>
+          <LogoStyled src="/logos/spotify-canvas-logo.png" alt="Spotify logo" />
+          <Button action={() => setOpen(true)} background="var(--middark)"><img src="/images/hamburger.svg" /></Button>
         </NavBar>
       </MobileHeader>
       <DesktopHeader>
         <NavBar>
-          <LogoStyled src="../../public/images/spotify-canvas-logo.png" alt="Spotify logo" />
+          <LogoStyled src="/logos/spotify-canvas-logo.png" alt="Spotify logo" />
           <NavElements background="#141414">
             <DropDown links={languages} />
             <Button background="#141414">Empezar</Button>

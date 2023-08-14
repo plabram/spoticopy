@@ -4,7 +4,7 @@ import MultiTile from '../components/MultiTileResponsiveSlider'
 const Steps = () => {
   return (
     <SectionTemplate padding={"14vw"}>
-      <MultiTile imgs={["/get-noticed.svg", "/images/share-it.avif", "/images/change-it-up.svg"]}
+      <MultiTile imgs={["/images/get-noticed.svg", "/images/share-it.avif", "/images/change-it-up.svg"]}
         titles={["Hazte notar.", "Compártelo.", "Haz cambios."]}
         descriptions={["Atrae público y consigue que te escuchen. Cuando los oyentes ven un Canvas, es más probable que sigan escuchando la canción (+ 5 % de media en comparación con el grupo de control), la compartan (+ 145 %), la añadan a sus playlists (+ 20 %), la guarden (+ 1,4 %) y visiten tu página de perfil (+ 9 %).",
           "Tus Canvas también llegan a los fans que no utilizan Spotify. Si tú o tus oyentes compartís la canción en las historias de Instagram desde la aplicación de Spotify, tu Canvas aparecerá de fondo en la historia, junto con los detalles de la canción y un enlace Reproducir en Spotify para los fans.",

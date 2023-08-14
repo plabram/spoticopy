@@ -45,7 +45,7 @@ const SliderWithLabels = ({ values, handleClick }) => {
             <SliderInputStyledLabel htmlFor={value}>{value}</SliderInputStyledLabel>
           </div>
 
-          {index !== values.length - 1 && <SliderDots src="../../public/images/three-dots.svg" alt="dots" />}
+          {index !== values.length - 1 && <SliderDots src="/images/three-dots.svg" alt="dots" />}
         </SliderContainerDiv>
       ))
       }

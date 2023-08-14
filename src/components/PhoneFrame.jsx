@@ -46,9 +46,9 @@ opacity: 80%
 const PhoneFrame = ({ video }) => {
   return (
     <PhoneFrameDiv>
-      <PhoneImage src="../../public/images/smartphone.png" />
+      <PhoneImage src="/images/smartphone.png" />
       <FrontImage src={video.video} autoPlay loop muted />
-      <Controls src="../../public/images/controls.png" />
+      <Controls src="/images/controls.png" />
     </PhoneFrameDiv>
   )
 }
