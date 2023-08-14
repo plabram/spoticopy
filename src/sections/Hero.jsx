@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 import Slider from '../components/Slider'
 import { useState, useEffect } from 'react'
 import { device } from '../breakpoints'
+import { sampleVideos } from "../../sampleVideos"
 
 const HeroDiv = styled.div`
 padding-right: 64px;
@@ -21,46 +22,23 @@ justify-items: center;
 `
 
 
-const Hero = () => {
-
-
-  const [heroVideo, setHeroVideo] = useState(
-    {
-      name: "",
-      artist: "",
-      video: "",
-      category: "",
-      id: ""
-    }
-  )
-
-  const [videoIndex, setVideoIndex] = useState(2)
+const Hero = ({ videos }) => {
+  const [heroVideo, setHeroVideo] = useState(sampleVideos[2])
+  const [videoID, setVideoID] = useState(3)
 
   const handleClick = (e) => {
-    setVideoIndex(e.target.value)
-
+    setVideoID(e.target.value)
   }
 
-
   useEffect(() => {
-
-    const getVideo = async (uuid) => {
-
-      try {
-        const data = await fetch("https://64d93689e947d30a260a0107.mockapi.io/api/Videos")
-        const dataToJson = await data.json()
-        const apiVideo = dataToJson.filter(video => video.id == uuid)
+    const getVideo = (uuid) => {
+      if (videos) {
+        const apiVideo = videos.filter(video => video.id == uuid)
         setHeroVideo(apiVideo[0])
-
       }
-      catch (error) { console.log("error:", error) }
-
     }
-
-    getVideo(videoIndex)
-  }, [videoIndex])
-
-
+    getVideo(videoID)
+  }, [videoID])
 
   return (
     <SectionTemplate col="2">
