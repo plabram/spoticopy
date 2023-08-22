@@ -41,8 +41,8 @@ const SliderWithLabels = ({ values, handleClick }) => {
 
         <SliderContainerDiv key={index}>
           <div>
-            <input key={index} type="radio" id={value} name="button-slider" value={value} onClick={handleClick} defaultChecked={index === 0 ? true : false} />
-            <SliderInputStyledLabel htmlFor={value}>{value}</SliderInputStyledLabel>
+            <input key={index} type="radio" id={index} name="button-slider" value={value} onClick={handleClick} defaultChecked={index === 0 ? true : false} />
+            <SliderInputStyledLabel htmlFor={index}>{value}</SliderInputStyledLabel>
           </div>
 
           {index !== values.length - 1 && <SliderDots src="/images/three-dots.svg" alt="dots" />}

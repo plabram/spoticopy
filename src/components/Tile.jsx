@@ -15,11 +15,14 @@ margin-bottom: 2vw;
 
 const Tile = ({ img, title, description }) => {
   return (
-    <TileStyled>
-      <TileImageStyled src={img} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </TileStyled>
+    <>
+      <TileStyled data-testid="tile">
+        <TileImageStyled src={img} />
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p>test</p>
+      </TileStyled>
+    </>
   )
 }
 

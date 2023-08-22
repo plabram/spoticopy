@@ -11,7 +11,15 @@ border: 3px solid #222326;
 
 const SocialIcon = ({ img, width, height, border, background }) => {
   return (
-    <SocialIconStyled src={img} width={width} height={height} border={border} background={background}></SocialIconStyled>
+    <SocialIconStyled
+      src={img}
+      width={width}
+      height={height}
+      border={border}
+      background={background}
+      alt="social icon"
+      data-testid="social icon"
+    />
   )
 }
 

@@ -1,8 +1,8 @@
-import { sampleVideos } from "../../sampleVideos"
-import SectionTemplate from "./sectionTemplates/SectionTemplate"
-import SliderWithLabels from '../components/SliderWithLabels'
+import { sampleVideos } from "../../content/sampleVideos"
+import SectionTemplate from "../sectionTemplates/SectionTemplate"
+import SliderWithLabels from '../../components/SliderWithLabels'
 import { useState } from "react"
-import Carrousel from "../components/Carrousel"
+import Carrousel from "../../components/Carrousel"
 
 
 const Examples = ({ videos }) => {

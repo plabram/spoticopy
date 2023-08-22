@@ -16,9 +16,9 @@ color: ${props => props.color ? props.color : "#ffffff"};
 }
 `
 
-const Button = ({ children, color, background, action, size }) => {
+const Button = ({ children, color, background, action, size, align }) => {
   return (
-    <ButtonStyled size={size} onClick={action} background={background} color={color}>
+    <ButtonStyled align={align} size={size} onClick={action} background={background} color={color}>
       {children}
     </ButtonStyled>
   )

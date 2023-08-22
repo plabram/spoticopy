@@ -24,7 +24,7 @@ const Carrousel = ({ videos, explanation }) => {
 
   return (
     <>
-      <CarrouselDiv>
+      <CarrouselDiv data-testid="carrousel">
         {videos.map((video, index) => (
           <Poster key={index} video={video} padding={padding[index % 6]} />
         ))}

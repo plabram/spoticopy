@@ -1,10 +1,10 @@
-import SectionTemplate from './sectionTemplates/SectionTemplate'
-import PhoneFrame from '../components/PhoneFrame'
+import SectionTemplate from '../sectionTemplates/SectionTemplate'
+import PhoneFrame from '../../components/PhoneFrame'
 import { styled } from 'styled-components'
-import Slider from '../components/Slider'
+import Slider from '../../components/Slider'
 import { useState, useEffect } from 'react'
-import { device } from '../breakpoints'
-import { sampleVideos } from "../../sampleVideos"
+import { device } from '../../breakpoints'
+import { sampleVideos } from "../../content/sampleVideos"
 
 const HeroDiv = styled.div`
 padding-right: 64px;

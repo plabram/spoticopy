@@ -27,7 +27,8 @@ const Poster = ({ video, padding }) => {
       <PosterVideo
         onMouseOver={event => event.target.play()}
         onMouseOut={event => event.target.pause()}
-        src={video.video} />
+        src={video.video}
+        data-testid="poster video" />
       <h4>{video.name}</h4>
       <PosterP>{video.artist}</PosterP>
     </PosterStyled >

@@ -41,7 +41,7 @@ const MultiTile = ({ imgs, titles, descriptions }) => {
 
   return (
     <>
-      <MultiTileDesktop>
+      <MultiTileDesktop data-testid="multitile desktop">
         {tileData.map((data, index) => (
           <Tile
             key={index}
@@ -50,22 +50,14 @@ const MultiTile = ({ imgs, titles, descriptions }) => {
             description={data.description}
           />
         ))}
-        {/* <Tile img={imgs[0]}
-          title={titles[0]}
-          description={descriptions[0]}
-        />
-        <Tile img={imgs[1]}
-          title={titles[1]}
-          description={descriptions[1]}
-        />
-        <Tile img={imgs[2]}
-          title={titles[2]}
-          description={descriptions[2]}
-        /> */}
       </MultiTileDesktop>
 
-      <MultiTileMobile>
-        <Tile img={imgs[heroContent]} title={titles[heroContent]} description={descriptions[heroContent]} />
+      <MultiTileMobile data-testid="multitile mobile">
+        <Tile
+          img={imgs[heroContent]}
+          title={titles[heroContent]}
+          description={descriptions[heroContent]}
+        />
         <Slider values={valuesArray} handleClick={handleClick}></Slider>
       </MultiTileMobile>
     </>

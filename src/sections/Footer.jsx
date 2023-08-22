@@ -15,9 +15,9 @@ const Footer = () => {
         </NavElements>
 
         <NavElements>
-          <SocialIcon img="/icons/linkedin.png" width={"54px"} alt="LinkedIn" />
-          <SocialIcon img="/icons/twitter.png" width={"54px"} alt="Twitter" />
-          <SocialIcon img="/icons/instagram.png" width={"54px"} alt="Instagram" />
+          <SocialIcon img="/icons/linkedin.png" width={"54px"} />
+          <SocialIcon img="/icons/twitter.png" width={"54px"} />
+          <SocialIcon img="/icons/instagram.png" width={"54px"} />
         </NavElements>
       </NavBar>
       <NavBar>
