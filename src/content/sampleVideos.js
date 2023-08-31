@@ -1,51 +1,52 @@
 export const sampleVideos = [
   {
-    "name": "Billie Eilish",
-    "artist": "when the party's over",
-    "video": "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4",
-    "category": "Vídeo",
+    name: "Billie Eilish",
+    artist: "when the party's over",
+    video:
+      "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4",
+    category: "Vídeo"
   },
   {
-    "name": "Amine, Young Thug",
-    "artist": "Compensating",
-    "video": "https://canvaz.scdn.co/upload/artist/3Gm5F95VdRxW3mqCn8RPBJ/video/69bf2e8209624e87a5f158da90c6c8ab.cnvs.mp4",
-    "category": "Vídeo"
-  
+    name: "Amine, Young Thug",
+    artist: "Compensating",
+    video:
+      "https://canvaz.scdn.co/upload/artist/3Gm5F95VdRxW3mqCn8RPBJ/video/69bf2e8209624e87a5f158da90c6c8ab.cnvs.mp4",
+    category: "Vídeo"
   },
   {
-    "name": "Watermelon Sugar",
-    "artist": "Harry Styles",
-    "video": "https://canvaz.scdn.co/upload/licensor/5bSw7fRotCnRCcO9br14W5/video/2a67d467ce5a49cfb7a151d9a059ca5c.cnvs.mp4",
-    "category": "Vídeo"
-  
+    name: "Watermelon Sugar",
+    artist: "Harry Styles",
+    video:
+      "https://canvaz.scdn.co/upload/licensor/5bSw7fRotCnRCcO9br14W5/video/2a67d467ce5a49cfb7a151d9a059ca5c.cnvs.mp4",
+    category: "Vídeo"
   },
   {
-    "name": "Doja Cat",
-    "artist": "Soy So",
-    "video": "https://canvaz.scdn.co/upload/artist/5cj0lLjcoR7YOSnhnX0Po5/video/0e5547167de245bc900d157af537fdfe.cnvs.mp4",
-    "category": "Vídeo"
-  
+    name: "Doja Cat",
+    artist: "Soy So",
+    video:
+      "https://canvaz.scdn.co/upload/artist/5cj0lLjcoR7YOSnhnX0Po5/video/0e5547167de245bc900d157af537fdfe.cnvs.mp4",
+    category: "Vídeo"
   },
   {
-    "name": "Dua Saleh",
-    "artist": "Cat Scratch",
-    "video": "https://canvaz.scdn.co/upload/artist/2DGBzoOLcKLK3eWxFyugdB/video/82f12c839fe143cd8e8a3c5c8691d58f.cnvs.mp4",
-    "category": "Vídeo"
-  
+    name: "Dua Saleh",
+    artist: "Cat Scratch",
+    video:
+      "https://canvaz.scdn.co/upload/artist/2DGBzoOLcKLK3eWxFyugdB/video/82f12c839fe143cd8e8a3c5c8691d58f.cnvs.mp4",
+    category: "Vídeo"
   },
   {
-    "name": "Snoh Alegra",
-    "artist": "Dying for your love",
-    "video": "https://canvaz.scdn.co/upload/artist/1A9o3Ljt67pFZ89YtPPL5X/video/6d9c18fe33cf45c9987fc8d915610dbe.cnvs.mp4",
-    "category": "Vídeo"
-  
-   },
+    name: "Snoh Alegra",
+    artist: "Dying for your love",
+    video:
+      "https://canvaz.scdn.co/upload/artist/1A9o3Ljt67pFZ89YtPPL5X/video/6d9c18fe33cf45c9987fc8d915610dbe.cnvs.mp4",
+    category: "Vídeo"
+  }
   // {
   //   "name": "Tourist",
   //   "artist": "Last",
   //   "video": "https://canvaz.scdn.co/upload/artist/2ABBMkcUeM9hdpimo86mo6/video/634b9a7e131a400eb1b7d5671d98653e.cnvs.mp4",
   //   "category": "Vídeo"
-  
+
   // },
   // {
   //   "name": "Glass Animals",
@@ -167,5 +168,4 @@ export const sampleVideos = [
   //   "video": "https://canvaz.scdn.co/upload/artist/1kMPdZQVdUhMDKDWOJM5iK/video/61e2f8dec50c4af2932c1d65660a8ac8.cnvs.mp4",
   //   "category": "Combinación de medios"
   // },
-
 ]

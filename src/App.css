@@ -1,7 +1,7 @@
 * {
-  color:var(--light);
-  font-family: 'Nunito', sans-serif;
-  --accent: #F39B23;
+  color: var(--light);
+  font-family: "Nunito", sans-serif;
+  --accent: #f39b23;
   --dark: #000000;
   --light: #ffffff;
   --mid: #898989;
@@ -29,27 +29,27 @@ h1 {
   animation: animation 1s ease-out;
 }
 
- h1 > em {
+h1 > em {
   color: var(--accent);
   font-style: normal;
-} 
+}
 
 h2 {
   font-size: 8rem;
-  font-family: 'Londrina Outline', cursive;
+  font-family: "Londrina Outline", cursive;
   line-height: 8rem;
   color: var(--mid);
   opacity: 20%;
-  text-align: center
+  text-align: center;
 }
 
 h3 {
   color: var(--accent);
-font-size: 42px;
-line-height: 3rem;
-margin-bottom: 20px;
-text-align: center;
-padding: 0px;
+  font-size: 42px;
+  line-height: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0px;
 }
 
 h4 {
@@ -66,23 +66,23 @@ h5 {
 }
 
 p {
-font-size: 1.1rem;
-line-height: 1.6;
-color: var(--light);
-padding-top: 10px;
-animation: animation 2s ease-out;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light);
+  padding-top: 10px;
+  animation: animation 2s ease-out;
 }
 
 input[type="radio"] {
   appearance: none;
-  padding: 10px;
+  padding: 5px;
   background-color: var(--light);
   border: 3px solid var(--light);
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 input[type="radio"]:checked {
-  border: 3px solid var(--accent);
+  border: 3px solid var(--light);
   background-color: var(--dark);
   transition: background 0.5s ease 0s;
 }
@@ -90,7 +90,6 @@ input[type="radio"]:checked {
 input[type="radio"]:hover {
   background-color: var(--accent);
 }
-
 
 @keyframes animation {
   0% {
@@ -103,23 +102,35 @@ input[type="radio"]:hover {
     bottom: 0;
   }
 }
-  
+
 @keyframes slide-in {
-  100% { transform: translateX(0%); }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @-webkit-keyframes slide-in {
-  100% { -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
 }
-  
+
 @keyframes slide-out {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @-webkit-keyframes slide-out {
-  0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(-100%); }
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 900px) {
@@ -127,8 +138,13 @@ input[type="radio"]:hover {
     font-size: 4rem;
     line-height: 2.5rem;
   }
-  
+
   h2 {
-    font-size: 6rem
+    font-size: 6rem;
+  }
+
+  label {
+    width: 80px;
+    font-size: 11px;
   }
 }

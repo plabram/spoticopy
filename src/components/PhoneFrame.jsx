@@ -1,8 +1,8 @@
-import { styled } from "styled-components";
-import { device } from "../breakpoints";
+import { styled } from "styled-components"
+import { device } from "../breakpoints"
 
 const PhoneFrameDiv = styled.div`
-position: relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 400px;
@@ -14,7 +14,7 @@ position: relative;
 `
 
 const PhoneImage = styled.img`
-position: relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,31 +27,45 @@ position: relative;
 `
 
 const FrontImage = styled.video`
-position: absolute;
+  position: absolute;
   top: 80px;
   left: 30px;
   width: calc(100% - 60px);
-  z-index: 2
+  z-index: 2;
 `
 
 const Controls = styled.img`
-position: absolute;
-top: 45px;
-left: 30px;
-width: calc(100% - 60px);
-z-index: 3;
-opacity: 80%
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  width: calc(100% - 60px);
+  z-index: 3;
+  opacity: 80%;
 `
 
 const PhoneFrame = ({ video }) => {
   return (
     <PhoneFrameDiv>
-      <PhoneImage src="/images/smartphone.png" alt="mobile phone frame" data-testid="mobile phone frame" />
-      <FrontImage src={video.video} alt="hero video" data-testid="hero video" autoPlay loop muted />
-      <Controls src="/images/controls.png" alt="mobile phone controls" data-testid="mobile phone controls" />
+      <PhoneImage
+        src="/images/smartphone.png"
+        alt="mobile phone frame"
+        data-testid="mobile phone frame"
+      />
+      <FrontImage
+        src={video.video}
+        alt="hero video"
+        data-testid="hero video"
+        autoPlay
+        loop
+        muted
+      />
+      <Controls
+        src="/images/controls.png"
+        alt="mobile phone controls"
+        data-testid="mobile phone controls"
+      />
     </PhoneFrameDiv>
   )
 }
 
 export default PhoneFrame
-

@@ -1,33 +1,29 @@
-import { styled } from "styled-components";
-import Tile from "./Tile";
-import Slider from "./Slider";
-import { device } from "../breakpoints";
-import { useState } from "react";
-
+import { styled } from "styled-components"
+import Tile from "./Tile"
+import Slider from "./Slider"
+import { device } from "../breakpoints"
+import { useState } from "react"
 
 const MultiTileMobile = styled.div`
-
-@media ${device.desktop} {
-  display: none;
-  font-color: red;
-}
+  @media ${device.desktop} {
+    display: none;
+    font-color: red;
+  }
 `
 
 const MultiTileDesktop = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
 
-display: flex;
-flex-direction: row;
-justify-items: center;
-
-@media ${device.mobile} {
-  display: none;
-}
+  @media ${device.mobile} {
+    display: none;
+  }
 `
 
 const MultiTile = ({ imgs, titles, descriptions }) => {
   const handleClick = (e) => {
     setHeroContent(e.target.value)
-
   }
   const [heroContent, setHeroContent] = useState(0)
 
@@ -36,7 +32,7 @@ const MultiTile = ({ imgs, titles, descriptions }) => {
     img,
     title: titles[index],
     description: descriptions[index]
-  }));
+  }))
   const valuesArray = [...Array(tilesCount).keys()]
 
   return (
@@ -58,7 +54,7 @@ const MultiTile = ({ imgs, titles, descriptions }) => {
           title={titles[heroContent]}
           description={descriptions[heroContent]}
         />
-        <Slider values={valuesArray} handleClick={handleClick}></Slider>
+        <Slider values={valuesArray} handleClick={handleClick} margin="10px"></Slider>
       </MultiTileMobile>
     </>
   )

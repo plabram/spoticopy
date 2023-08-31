@@ -7,7 +7,6 @@ import { render, screen } from "@testing-library/react"
 import Footer from "../sections/Footer"
 import SocialIcon from "../components/SocialIcon"
 
-
 describe("Footer", () => {
   test("Should render bottom links", () => {
     render(<Footer />)

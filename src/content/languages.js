@@ -1,54 +1,54 @@
 export const languages = [
   {
-    "name": "Español",
-    "shortName": "ES-ES"
+    name: "Español",
+    shortName: "ES-ES"
   },
   {
-    "name": "English",
-    "shortName": "EN"
+    name: "English",
+    shortName: "EN"
   },
   {
-    "name": "Nederlands",
-    "shortName": "NL"
+    name: "Nederlands",
+    shortName: "NL"
   },
   {
-    "name": "Deustch",
-    "shortName": "DE"
+    name: "Deustch",
+    shortName: "DE"
   },
   {
-    "name": "Français (FR)",
-    "shortName": "FR"
+    name: "Français (FR)",
+    shortName: "FR"
   },
   {
-    "name": "Italiano",
-    "shortName": "IT"
+    name: "Italiano",
+    shortName: "IT"
   },
   {
-    "name": "Español (LATAM)",
-    "shortName": "ES"
+    name: "Español (LATAM)",
+    shortName: "ES"
   },
   {
-    "name": "Svenska",
-    "shortName": "SV"
+    name: "Svenska",
+    shortName: "SV"
   },
   {
-    "name": "Polski",
-    "shortName": "PL"
+    name: "Polski",
+    shortName: "PL"
   },
   {
-    "name": "Bahasa Indonesia",
-    "shortName": "IN"
+    name: "Bahasa Indonesia",
+    shortName: "IN"
   },
   {
-    "name": "Melayu",
-    "shortName": "ME"
+    name: "Melayu",
+    shortName: "ME"
   },
   {
-    "name": "Suomi",
-    "shortName": "SU"
+    name: "Suomi",
+    shortName: "SU"
   },
   {
-    "name": "Magyar Nyelv",
-    "shortName": "MA"
-  },
+    name: "Magyar Nyelv",
+    shortName: "MA"
+  }
 ]

@@ -1,11 +1,11 @@
-import { styled } from "styled-components";
-
+import { styled } from "styled-components"
 
 const SocialIconStyled = styled.img`
-width: ${props => props.width ? props.width : "54px"}
-height: ${props => props.height ? props.height : props.width};
-background-color: ${props => props.background ? props.background : "#ffffff"};
-border-radius: ${props => props.border ? props.border : "50%"};
+width: ${(props) => (props.width ? props.width : "54px")}
+height: ${(props) => (props.height ? props.height : props.width)};
+background-color: ${(props) =>
+  props.background ? props.background : "#ffffff"};
+border-radius: ${(props) => (props.border ? props.border : "50%")};
 border: 3px solid #222326;
 `
 

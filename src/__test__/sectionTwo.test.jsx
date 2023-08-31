@@ -6,11 +6,11 @@ import { describe, test, expect } from "vitest"
 import { render, screen } from "@testing-library/react"
 import { sampleVideos } from "../content/sampleVideos"
 import Poster from "../components/Poster"
-import Examples from "../sections/sections/Examples"
+import SectionTwo from "../sections/sections/SectionTwo"
 
-describe("Examples", () => {
+describe("SectionTwo", () => {
   test("Section should have a carrousel", () => {
-    render(<Examples videos={sampleVideos} />)
+    render(<SectionTwo videos={sampleVideos} />)
     expect(screen.getByTestId("carrousel")).toBeInTheDocument()
   })
 })
@@ -21,6 +21,3 @@ describe("Posters", () => {
     expect(screen.getByTestId("poster video")).toBeInTheDocument()
   })
 })
-
-
-

@@ -4,16 +4,17 @@
 
 import { describe, test, expect } from "vitest"
 import { render, screen } from "@testing-library/react"
-import Hero from "../sections/sections/Hero"
+import SectionOne from "../sections/sections/SectionOne"
 import PhoneFrame from "../components/PhoneFrame"
 import { sampleVideos } from "../content/sampleVideos"
 
-
-describe("Hero", () => {
-  test("Should render header and body text", () => {
-    render(<Hero />)
+describe("SectionOne", () => {
+  test("Should render basic header and body text", () => {
+    render(<SectionOne />)
     expect(screen.getByText("Sorprende")).toBeInTheDocument()
-    expect(screen.getByText("Canvas ya está disponible para todos los artistas")).toBeInTheDocument()
+    expect(
+      screen.getByText("Canvas ya está disponible para todos los artistas")
+    ).toBeInTheDocument()
   })
 })
 

@@ -2,7 +2,7 @@ import SectionTemplate from '../sectionTemplates/SectionTemplate'
 import MultiTile from '../../components/MultiTileResponsiveSlider'
 import { stepsContent } from '../../content/stepsContent'
 
-const Steps = () => {
+const SectionThree = () => {
   return (
     <SectionTemplate padding={"14vw"}>
       <MultiTile
@@ -14,4 +14,4 @@ const Steps = () => {
   )
 }
 
-export default Steps
+export default SectionThree

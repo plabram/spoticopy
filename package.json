@@ -12,6 +12,8 @@
     "test-ui": "vitest --ui"
   },
   "dependencies": {
+    "prettier": "^3.0.3",
+    "prettify": "^0.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.7"

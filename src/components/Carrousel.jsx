@@ -1,22 +1,21 @@
-import Poster from './Poster'
-import { styled } from 'styled-components'
-
+import Poster from "./Poster"
+import { styled } from "styled-components"
 
 const CarrouselP = styled.p`
-text-align: center;
-color: var(--mid);
-font-style: italic;
+  text-align: center;
+  color: var(--mid);
+  font-style: italic;
 `
 
 const CarrouselDiv = styled.div`
-display: flex;
-flex-direction: row;
-overflow: scroll;
-height: 470px;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  height: 470px;
 
-&::-webkit-scrollbar {
-  display: none;
-}
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 const Carrousel = ({ videos, explanation }) => {

@@ -1,11 +1,11 @@
 import { sampleVideos } from "../../content/sampleVideos"
 import SectionTemplate from "../sectionTemplates/SectionTemplate"
-import SliderWithLabels from '../../components/SliderWithLabels'
 import { useState } from "react"
 import Carrousel from "../../components/Carrousel"
+import Slider from "../../components/Slider"
 
 
-const Examples = ({ videos }) => {
+const SectionTwo = ({ videos }) => {
   const categories = ["Gráficos 3D", "Gráficos 2D", "Combinación de medios", "Vídeo"]
   const [carouselVideos, setCarouselVideos] = useState(sampleVideos.slice(0, 6))
 
@@ -24,9 +24,11 @@ const Examples = ({ videos }) => {
     <SectionTemplate background="#141414">
       <h2>Ejemplos</h2>
       <Carrousel videos={carouselVideos} explanation="Intenta empezar y acabar con el mismo fotograma para conseguir un bucle continuo." />
-      <SliderWithLabels values={categories} handleClick={handleClick} />
+      <Slider values={categories} handleClick={handleClick}
+        labels="true"
+      />
     </SectionTemplate >
   )
 }
 
-export default Examples
+export default SectionTwo
