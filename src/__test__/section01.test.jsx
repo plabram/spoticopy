@@ -4,7 +4,7 @@
 
 import { describe, test, expect } from "vitest"
 import { render, screen } from "@testing-library/react"
-import SectionOne from "../sections/sections/SectionOne"
+import SectionOne from "../sections/sections/Section01"
 import PhoneFrame from "../components/PhoneFrame"
 import { sampleVideos } from "../content/sampleVideos"
 

@@ -2,7 +2,6 @@ import { styled } from "styled-components"
 
 const NavElementsStyled = styled.div`
   display: flex;
-  flex-direction: row;
   gap: 20px;
   align-items: center;
   background-color: ${(props) =>

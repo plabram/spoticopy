@@ -5,7 +5,6 @@ const DropDrownLinksStyled = styled.li`
   background-color: #ffffff;
   color: #000000;
   font: 14px;
-  font-weight: bold;
 `
 
 const DropDownLinks = ({ children, action }) => {

@@ -1,15 +1,14 @@
 import Poster from "./Poster"
 import { styled } from "styled-components"
 
-const CarrouselP = styled.p`
+const CarouselP = styled.p`
   text-align: center;
   color: var(--mid);
   font-style: italic;
 `
 
-const CarrouselDiv = styled.div`
+const CarouselDiv = styled.div`
   display: flex;
-  flex-direction: row;
   overflow: scroll;
   height: 470px;
 
@@ -18,19 +17,19 @@ const CarrouselDiv = styled.div`
   }
 `
 
-const Carrousel = ({ videos, explanation }) => {
+const Carousel = ({ videos, explanation }) => {
   const padding = ["40px", "10px", "25px", "15px", "30px", "20px"]
 
   return (
     <>
-      <CarrouselDiv data-testid="carrousel">
+      <CarouselDiv data-testid="carousel">
         {videos.map((video, index) => (
           <Poster key={index} video={video} padding={padding[index % 6]} />
         ))}
-      </CarrouselDiv>
-      <CarrouselP>{explanation ? explanation : ""}</CarrouselP>
+      </CarouselDiv>
+      <CarouselP>{explanation ? explanation : ""}</CarouselP>
     </>
   )
 }
 
-export default Carrousel
+export default Carousel

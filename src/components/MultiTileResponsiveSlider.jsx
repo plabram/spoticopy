@@ -13,7 +13,6 @@ const MultiTileMobile = styled.div`
 
 const MultiTileDesktop = styled.div`
   display: flex;
-  flex-direction: row;
   justify-items: center;
 
   @media ${device.mobile} {

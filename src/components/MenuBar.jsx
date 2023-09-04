@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
-import { device } from "../../breakpoints"
+import { device } from "../breakpoints"
 
-const NavBarStyled = styled.div`
+const MenuBarStyled = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.direction ? props.direction : "row")};
   justify-content: space-between;
@@ -14,16 +14,16 @@ const NavBarStyled = styled.div`
 
   @media ${device.mobile} {
     flex-direction: ${(props) =>
-      props.direction ? props.direction : "column"};
+    props.direction ? props.direction : "row"};
   }
 `
 
-const NavBar = ({ children, background, direction }) => {
+const MenuBar = ({ children, background, direction }) => {
   return (
-    <NavBarStyled background={background} direction={direction}>
+    <MenuBarStyled background={background} direction={direction}>
       {children}
-    </NavBarStyled>
+    </MenuBarStyled>
   )
 }
 
-export default NavBar
+export default MenuBar

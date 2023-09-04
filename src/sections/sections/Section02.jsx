@@ -1,7 +1,7 @@
 import { sampleVideos } from "../../content/sampleVideos"
 import SectionTemplate from "../sectionTemplates/SectionTemplate"
 import { useState } from "react"
-import Carrousel from "../../components/Carrousel"
+import Carousel from "../../components/Carousel"
 import Slider from "../../components/Slider"
 
 
@@ -23,7 +23,7 @@ const SectionTwo = ({ videos }) => {
   return (
     <SectionTemplate background="#141414">
       <h2>Ejemplos</h2>
-      <Carrousel videos={carouselVideos} explanation="Intenta empezar y acabar con el mismo fotograma para conseguir un bucle continuo." />
+      <Carousel videos={carouselVideos} explanation="Intenta empezar y acabar con el mismo fotograma para conseguir un bucle continuo." />
       <Slider values={categories} handleClick={handleClick}
         labels="true"
       />

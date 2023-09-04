@@ -4,7 +4,7 @@
 
 import { describe, test, expect } from "vitest"
 import { render, screen } from "@testing-library/react"
-import SectionThree from "../sections/sections/SectionThree"
+import SectionThree from "../sections/sections/Section03"
 import Tile from "../components/Tile"
 
 describe("SectionThree", () => {
