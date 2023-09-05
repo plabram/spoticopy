@@ -37,10 +37,9 @@ describe("Phone Frame slider", () => {
     //RETURNS TRUE
     await billieEilishVideo.click()
     expect(billieEilishVideo).toBeChecked()
-    const selectedVideo = screen.getByTestId("hero video")
 
     //RETURNS FALSE
-    expect(selectedVideo).toHaveAttribute("src", "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4")
+    expect(screen.getByTestId("hero video")).toHaveAttribute("src", "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4")
   })
 })
 
