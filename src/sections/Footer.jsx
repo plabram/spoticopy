@@ -1,11 +1,12 @@
 import MenuBar from "../components/MenuBar"
 import NavElements from "../components/NavElements"
 import SocialIcon from "../components/SocialIcon"
+import { footerLinks } from "../content/footerAndHeaderLinks"
 
 const Footer = () => {
   return (
     <div>
-      <MenuBar>
+      <MenuBar direction="column">
         <NavElements>
           <SocialIcon
             img="/logos/spotify.png"
@@ -40,12 +41,14 @@ const Footer = () => {
       </MenuBar>
       <MenuBar>
         <NavElements>
-          <p>Información Legal</p>
-          <p>Política de Privacidad</p>
-          <p>Cookie Settings</p>
+          {footerLinks.map((text, index) => (
+            <li key={index}>{text}</li>
+          ))}
         </NavElements>
         <p>(C) 2020 Spotify AB</p>
       </MenuBar>
+
+      <br />
     </div>
   )
 }

@@ -32,7 +32,7 @@ const DropDown = ({ links }) => {
 
   return (
     <div>
-      <Button background="inherit" action={handleOpen}>
+      <Button background="inherit" action={handleOpen} data-testid="dropdown button">
         {selection}
         {open ? "  ˄" : "  ˅"}
       </Button>

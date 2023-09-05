@@ -2,8 +2,6 @@ import { styled } from "styled-components"
 import Button from "./Button"
 
 const DropDrownLinksStyled = styled.li`
-  background-color: #ffffff;
-  color: #000000;
   font: 14px;
 `
 

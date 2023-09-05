@@ -51,6 +51,7 @@ const Slider = ({ values, handleClick, labels, margin }) => {
               onClick={handleClick}
               defaultChecked={index === 0 ? true : false}
               labels={labels}
+              data-testid="slider input"
             />
             <SliderInputStyledLabel htmlFor={index} labels={labels}>
               {value}

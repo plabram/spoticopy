@@ -4,13 +4,13 @@
 
 import { describe, test, expect } from "vitest"
 import { render, screen } from "@testing-library/react"
-import Footer from "../sections/Footer"
-import SocialIcon from "../components/SocialIcon"
+import Footer from "../../sections/Footer"
+import SocialIcon from "../../components/SocialIcon"
 
 describe("Footer", () => {
   test("Should render bottom links", () => {
     render(<Footer />)
-    expect(screen.getByText("Información Legal")).toBeInTheDocument()
+    expect(screen.getByText("Cookie Settings")).toBeInTheDocument()
   })
 
   test("Footer should show social icons", () => {

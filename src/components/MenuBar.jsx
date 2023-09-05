@@ -5,6 +5,7 @@ const MenuBarStyled = styled.div`
   display: flex;
   flex-direction: ${(props) => (props.direction ? props.direction : "row")};
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 32px 16px 32px 16px;
   font-size: 0.875rem;
