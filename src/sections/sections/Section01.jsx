@@ -27,7 +27,6 @@ const SectionOne = ({ videos }) => {
 
   const handleClick = (e) => {
     setVideoID(e.target.value)
-    console.log(videoID)
   }
 
   useEffect(() => {

@@ -2,12 +2,12 @@
  * @vitest-environment jsdom
  */
 
-import { describe, test, expect } from "vitest"
+import { describe, test, expect, it } from "vitest"
 import { render, screen, waitFor } from "@testing-library/react"
 import { sampleVideos } from "../../content/sampleVideos"
 import Poster from "../../components/Poster"
 import SectionTwo from "../../sections/sections/Section02"
-import { act } from "react-dom/test-utils"
+import userEvent from "@testing-library/user-event"
 
 describe("Section Two", () => {
   test("Section should have a carousel", () => {
@@ -24,16 +24,17 @@ describe("Posters", () => {
 })
 
 describe("Carousel", () => {
-  test("Should change video array on click", async () => {
+  it("Should change video array on click", async () => {
     render(<SectionTwo />)
-    const input = screen.getByRole("radio", { name: "Vídeo" })
-    const video = screen.getAllByTestId("poster video")
-    act(() => {
-      input.click()
+    const videoCategory = screen.getByLabelText("Vídeo")
+    console.log(videoCategory)
+    await userEvent.click(videoCategory)
+    await waitFor(async () => {
+      const firstVideoAfterClick = screen.getAllByTestId("poster video")[0]
+      expect(firstVideoAfterClick).toHaveAttribute(
+        "src",
+        "https://canvaz.scdn.co/upload/licensor/7JGwF0zhX9oItt9901OvB5/video/fdde72ad6463499e8cb83ddc9bb9f60f.cnvs.mp4"
+      )
     })
-    waitFor(() =>
-      expect(video[0]).toHaveAttribute("src", "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4")
-    )
   })
 })
-

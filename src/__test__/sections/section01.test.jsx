@@ -7,7 +7,6 @@ import { render, screen, waitFor } from "@testing-library/react"
 import SectionOne from "../../sections/sections/Section01"
 import PhoneFrame from "../../components/PhoneFrame"
 import { sampleVideos } from "../../content/sampleVideos"
-import { act } from "react-dom/test-utils"
 import userEvent from "@testing-library/user-event"
 
 describe("Section One basics", () => {
@@ -38,7 +37,7 @@ describe("Phone Frame slider", () => {
       const videoAfterClick = screen.getByTestId("hero video")
       expect(videoAfterClick).toHaveAttribute(
         "src",
-        "https://canvaz.scdn.co/upload/licensor/5bSw7fRotCnRCcO9br14W5/video/2a67d467ce5a49cfb7a151d9a059ca5c.cnvs.mp4"
+        "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4"
       )
     })
   })
