@@ -39,7 +39,7 @@ describe("Phone Frame slider", () => {
       const videoAfterClick = screen.getByTestId("hero video")
       expect(videoAfterClick).toHaveAttribute(
         "src",
-        "https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_1280.jpg"
+        "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4"
       )
     })
   })
