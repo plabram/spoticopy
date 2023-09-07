@@ -9,6 +9,8 @@ import PhoneFrame from "../../components/PhoneFrame"
 import { sampleVideos } from "../../content/sampleVideos"
 import userEvent from "@testing-library/user-event"
 
+
+
 describe("Section One basics", () => {
   test("Should render basic header and body text", () => {
     render(<SectionOne />)
@@ -31,13 +33,13 @@ describe("Phone Frame basics", () => {
 describe("Phone Frame slider", () => {
   it("Should change video on click", async () => {
     render(<SectionOne />)
-    const billieEilishVideo = screen.getByLabelText("2")
+    const billieEilishVideo = screen.getByLabelText("1")
     await userEvent.click(billieEilishVideo)
     await waitFor(async () => {
       const videoAfterClick = screen.getByTestId("hero video")
       expect(videoAfterClick).toHaveAttribute(
         "src",
-        "https://prismic-io.s3.amazonaws.com/sp-canvas%2F1da97ce4-6012-4b2e-87d2-d88cd55e7b1c_featured_billie360x640.mp4"
+        "https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_1280.jpg"
       )
     })
   })

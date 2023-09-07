@@ -27,20 +27,20 @@ const PhoneImage = styled.img`
 `
 
 const FrontImage = styled.video`
-  position: absolute;
-  top: 80px;
-  left: 30px;
-  width: calc(100% - 60px);
-  z-index: 2;
+position: absolute;
+top: 80px;
+left: 30px;
+width: calc(100% - 60px);
+z-index: 2;
 `
 
 const Controls = styled.img`
-  position: absolute;
-  top: 45px;
-  left: 30px;
-  width: calc(100% - 60px);
-  z-index: 3;
-  opacity: 80%;
+position: absolute;
+top: 45px;
+left: 30px;
+width: calc(100% - 60px);
+z-index: 3;
+opacity: 80%;
 `
 
 const PhoneFrame = ({ video }) => {
