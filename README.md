@@ -1,9 +1,5 @@
-# React + Vite
+# Spoticopy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project mimics a landing page for a major provider in the musin industry. It uses data from a mock API and contains different animations and interactive elements, buiñt with JavaScipt, HTML, React and CSS.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# spoticopy
+Unit tests created in Vitest are available for the project. They're currently in `.gitignore`, but feel free to ask if you'd like to take a look!
