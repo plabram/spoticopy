@@ -1,5 +1,5 @@
 # Spoticopy
 
-This project mimics a landing page for a major provider in the musin industry. It uses data from a mock API and contains different animations and interactive elements, buiñt with JavaScipt, HTML, React and CSS.
+A dynamic landing page that mimics Spotify. The challenge? build it all with Styled Components (nearly no CSS). The important bits are unit tested. Videos come from a mock API.
 
-Unit tests created in Vitest are available for the project. They're currently in `.gitignore`, but feel free to ask if you'd like to take a look!
+See Spoticopy live here: https://spoticopy.netlify.app/
